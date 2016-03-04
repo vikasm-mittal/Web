@@ -104,6 +104,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\posts\add.html" />
+    <Content Include="app\posts\views\add.html" />
+    <Content Include="app\posts\views\edit.html" />
+    <Content Include="app\posts\views\list.html" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -117,6 +121,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Styles\site.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -158,7 +163,9 @@
     <TypeScriptCompile Include="app\common\services\dataService.ts" />
     <TypeScriptCompile Include="app\domain\IEntity.ts" />
     <TypeScriptCompile Include="app\domain\Post.ts" />
-    <TypeScriptCompile Include="app\posts\postCtrl.ts" />
+    <TypeScriptCompile Include="app\posts\postAddCtrl.ts" />
+    <TypeScriptCompile Include="app\posts\postsCtrl.ts" />
+    <TypeScriptCompile Include="app\posts\postEditCtrl.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />

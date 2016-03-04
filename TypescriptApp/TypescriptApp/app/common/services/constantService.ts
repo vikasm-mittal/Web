@@ -14,5 +14,5 @@
         }
     }
 
-    angular.module("myApp").service(ConstantService.IID, ConstantService);
+    angular.module("MyApp").service(ConstantService.IID, ConstantService);
 }

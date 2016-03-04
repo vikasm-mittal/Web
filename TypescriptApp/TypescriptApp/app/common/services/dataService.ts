@@ -68,7 +68,21 @@
 
             return deferred.promise;
         }
+
+        add(resource: string, entity: app.domain.IEntity): ng.IPromise<app.domain.EntityBase> {
+            var self = this;
+            var deferred = self.qService.defer();
+
+            self.httpService.post(resource, entity)
+                .then(function (result) {
+                    deferred.resolve(result.data);
+                }, function (error) {
+                    deferred.reject(error);
+                });
+
+            return deferred.promise;
+        }
     }
 
-    angular.module(Config.IID).service(DataService.IID, DataService);
+    angular.module('MyApp').service(DataService.IID, DataService);
 }
