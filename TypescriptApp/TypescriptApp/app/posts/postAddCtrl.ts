@@ -8,14 +8,11 @@
     class PostAddCtrl implements IAddPostViewModel {
 
         post: app.domain.IPost;
-        test: string = "hello";
 
         static $inject = ['$location', 'constantService', 'dataService'];
         constructor(private $location: ng.ILocationService,
             private constantService: app.common.services.ConstantService,
             private dataService: app.common.services.DataService) {
-
-            this.test = "hello world";
         }
 
         add(): void {

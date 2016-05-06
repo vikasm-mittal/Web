@@ -1,4 +1,4 @@
-﻿@{
+@{
     Layout = null;
 }
 
@@ -8,22 +8,22 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
-    <link href="~/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-    <link href="~/Styles/site.css" rel="stylesheet" />
 
-    <script src="~/bower_components/jquery/dist/jquery.js"></script>
-    <script src="~/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="~/bower_components/angular/angular.js"></script>
-    <script src="~/bower_components/angular-route/angular-route.js"></script>
+    <!-- styles:css -->
+    <link rel="stylesheet" href="/.build/css/appStyles.css">
+    <!-- endinject -->
 
-    <script src="~/app/app.js"></script>
-    <script src="~/app/domain/IEntity.js"></script>
-    <script src="~/app/domain/Post.js"></script>
-    <script src="~/app/common/services/constantService.js"></script>
-    <script src="~/app/common/services/dataService.js"></script>
-    <script src="~/app/posts/postsCtrl.js"></script>
-    <script src="~/app/posts/postAddCtrl.js"></script>
-    <script src="~/app/posts/postEditCtrl.js"></script>
+    <!-- vendors:js -->
+    <script src="/.build/vendors/vendors.js"></script>
+    <!-- endinject -->
+
+    <!-- domain:js -->
+    <script src="/.build/spa/domain.js"></script>
+    <!-- endinject -->
+
+    <!-- app:js -->    
+    <script src="/.build/spa/app.js"></script>    
+    <!-- endinject -->   
 
 </head>
 <body>
@@ -45,13 +45,13 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right" ng-if="userData.isUserLoggedIn">
                         <li class="userinfo"><a href="#/">{{username}}<i class="fa fa-user fa-fw"></i></a></li>
-                    </ul>                    
+                    </ul>
                 </div>
             </div>
 
             <ng-view></ng-view>
         </div>
     </div>
-    
+
 </body>
 </html>

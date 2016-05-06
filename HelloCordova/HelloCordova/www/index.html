@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <meta charset="utf-8" />
+
+
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="scripts/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="scripts/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/angular/angular.min.js"></script>
+    <script src="scripts/angular-route/angular-route.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/WeatherModel.js"></script>
+    <script src="scripts/WeatherResult.js"></script>
+    <script src="scripts/weatherCtrl.js"></script>
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <title>HelloCordova</title>
+
+    <!-- HelloCordova references -->
+    
+</head>
+<body>
+    <div >
+        <ng-view></ng-view>
+        <!--<p id="deviceready" class="event">Connecting to Device</p>-->
+    </div>
+    <!-- Cordova reference, this is added to your app when it's built. -->
+
+</body>
+</html>

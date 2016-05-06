@@ -1,0 +1,25 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading text-center">My Weather App</div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label for="zipcode">{{vm.ZipCodeLabel}}</label>
+            <input type="text" id="zipcode" class="form-control" ng-model="vm.ZipCode" />
+            <button type="button" class="btn btn-primary form-control" style="margin:5px 0px 0px 0px" ng-click="vm.GetWeather()">Get Weather</button>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%" />
+        </div>
+    </div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item">Name: <span>{{vm.Name}}</span></li>
+            <li class="list-group-item">Temp: <span>{{vm.Temp}}</span></li>
+            <li class="list-group-item">Wind: <span>{{vm.Wind}}</span></li>
+            <li class="list-group-item">humidity: <span>{{vm.Humidity}}</span></li>
+        </ul>
+    </div>
+    <
+</div>
+
